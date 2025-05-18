@@ -1,0 +1,56 @@
+body {
+
+    /* center 16x16 grid */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+#grid-container { 
+
+    /* use flexbox */
+    display: flex;
+
+    /* vertical main axis */
+    flex-direction: column;
+
+    /* create square shapes */
+    width: 600px;
+    height: 600px;
+
+    /* spacing between rows */
+    gap: 2px;
+
+}
+
+.grid-row{
+
+    /* use flexbox */
+    display: flex;
+
+    /* use full width */
+    flex: 1;
+    
+    /* spacing between columns */
+    gap: 2px;
+
+}
+
+.grid-col {
+    
+    /* use flexbox */
+    display: flex;
+    
+    /* use full width */
+    flex: 1;
+
+    /* include margin/padding within total size */
+    box-sizing: border-box;
+
+    /* change cell color */
+    background-color: aquamarine;
+
+}
