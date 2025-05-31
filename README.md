@@ -7,4 +7,4 @@ Instructions:
    (completed)
 3. Add button on top of screen that will send user a popup asking for
    number of squares per side for new grid. This will clean existing grid
-   and generate new grid. (to do)
+   and generate new grid. (completed)
