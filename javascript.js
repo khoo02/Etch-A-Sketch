@@ -80,6 +80,36 @@ controls = document.querySelector("#controls");
 // create button in dom and append
 const button = document.createElement("button");
 button.classList.add("button");
+button.textContent = "Reset";
 controls.appendChild(button);
 
+// reset button
+button.addEventListener("click", () => {
 
+    // create prompt for grid size
+    let newSize = prompt("Enter grid size (1-100):");
+
+    // check user input
+    if (newSize !== null) {
+        
+        // convert string to integer
+        newSize = parseInt(newSize);
+
+        // error check: integer between 0 and 100
+        if(!isNaN(newSize) && (newSize > 0) && (newSize <= 100)) {
+
+            // remove old grid
+            container.innerHTML = "";
+            
+            // create new grid
+            createGrid(newSize);
+
+        } else {
+
+            // error message
+            alert("Please enter a number between 1 and 100");
+        }
+
+    }
+
+})
